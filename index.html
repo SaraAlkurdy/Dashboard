@@ -1,0 +1,359 @@
+<!--
+Author: Sara Alkurdy
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap-4.2.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/font/typicons.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-light bg-off-white py-0 px-1 fixed-top mb-3">
+            <button  id="sidebarCollapse" class="navbar-brand btnnav ml-1" onclick="sidebarToggle()">
+                <span><i class="fas fa-ellipsis-h fa-2x icon-color"></i></span>
+            </button>
+            <div class="inner-addon left-addon">
+                <i class="fas fa-search"></i>
+                <input type="text" class="form-control pr-4" placeholder="Search..." />
+            </div>
+            <div class="form-inline row mr-1">
+                <a class="col-4"><img src="assets/images/settings.png"></a>
+                <a class="col-4"><img src="assets/images/bell.png"></a>
+                <a class="col-4"><img src="assets/images/login.png"></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar-left" id="slidebar">
+
+        <ul class="sidebar-menu mt-4">
+            <div class="row">
+                <div class="col-2 ml-0 pl-0"><img class="rounded-circle" src="assets/images/Pic.png" width="50px"
+                        height="50px" />
+                </div>
+                <div class="col-10 py-2 text-white ">
+                    <h4 class="header ml-2">Jack Williams</h4>
+                </div>
+            </div>
+
+            <hr class="row mt-4 mr-4">
+
+            <li class="treeview mt-3">
+                <div class="sidebar-menu-titles">
+                    <span>Main</span>
+                    <button class="btnlist btnnav" onclick="listToggole1()"><i
+                            class="fa fa-angle-down sidebar-angle mt-1 "></i></button>
+                </div>
+
+                <ul class="treeview-menu" id="toggoleList1">
+                    <li class="mb-2 mt-2"><a class="sidebar-menu-items" href=""><img src="assets/images/home.png"
+                                class="mr-3">
+                            Home</a></li>
+                    <li class="mb-2"><a class="sidebar-menu-items" href=""><img src="assets/images/projects.png"
+                                class="mr-3">
+                            Projects</a></li>
+                    <li class="mb-2"><a class="sidebar-menu-items" href=""><img src="assets/images/message.png"
+                                class="mr-3">
+                            Messages <span class="rounded-circle ml-5 msg-num">9</span></a></li>
+                    <li class="mb-2"><a class="sidebar-menu-items" href=""><img src="assets/images/analytics.png"
+                                class="mr-3">
+                            Analytics</a></li>
+                    <li class="mb-2"><a class="sidebar-menu-items" href=""><img src="assets/images/tasks.png"
+                                class="mr-3">
+                            Tasks</a></li>
+                </ul>
+            </li>
+
+            <hr class="row mt-4 mr-4">
+
+            <li class="treeview mt-3">
+                <div class="sidebar-menu-titles">
+                    <span>More</span>
+                    <button class="btnlist btnnav" onclick="listToggole2()"><i
+                            class="fa fa-angle-down sidebar-angle mt-1 "></i></button>
+                </div>
+
+                <ul class="treeview-menu" id="toggoleList2">
+                    <li class="mb-2 mt-2"><a class="sidebar-menu-items" href=""><img src="assets/images/payments.png"
+                                class="mr-3">
+                            Payments</a></li>
+                    <li class="mb-2"><a class="sidebar-menu-items" href=""><img src="assets/images/directory.png"
+                                class="mr-3">
+                            Directory</a></li>
+                    <li class="mb-2"><a class="sidebar-menu-items" href=""><img src="assets/images/library.png"
+                                class="mr-3">
+                            Library</a></li>
+                    <li class="mb-2"><a class="sidebar-menu-items" href=""><img src="assets/images/help.png"
+                                class="mr-3">
+                            Help</a></li>
+                </ul>
+            </li>
+
+            <div class="overlay"></div>
+    </aside>
+
+    <!-- Page Content  -->
+    <section class="content" id="bodyContent">
+        <div class="row">
+
+            <!-- Implementation Card -->
+            <div class="col-md-5 col-sm-12">
+                <div class="card">
+                    <div class="card-header bg-off-white table-reflow">
+                        <strong> Implementation </strong>
+                        <div class="float-right">
+                            <button class="btnnav">
+                                <i class="material-icons">remove</i>
+                            </button>
+                            <button class="btnnav">
+                                <i class="material-icons">close</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body bg-off-white">
+                        <table class="table table-hover table-responsive-sm table-responsive-md table-responsive-lg">
+                            <thead>
+                                <tr>
+                                    <td scope="col">Date</td>
+                                    <td scope="col"> Description</td>
+                                    <td scope="col">Balance</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="d-table"> 16 August
+                                        <table class="table-borderless">
+                                            <tr>
+                                                <td class="font-weight-normal nested p-0 pb-2 "> Saturday </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th> Recharge </th>
+                                    <td class="balance bgreen">+234$</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-table"> 14 August
+                                        <table class="table-borderless">
+                                            <tr>
+                                                <td class="font-weight-normal nested p-0 pb-2 "> Thusday </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th>Purchase of office paper</th>
+                                    <td class="balance bred">-175$</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-table"> 12 August
+                                        <table class="table-borderless">
+                                            <tr>
+                                                <td class="font-weight-normal nested p-0 pb-2 "> Thusday </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th>Payment for hosting</th>
+                                    <td class="balance bred">-3920$</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="d-table"> 11 August
+                                        <table class="table-borderless">
+                                            <tr>
+                                                <td class="font-weight-normal nested p-0 "> Monday </td>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                    <th>Recharge</th>
+                                    <td class="balance bgreen">+764$</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client Activity Card -->
+            <div class="col-md-7 col-sm-12">
+                <div class="card">
+                    <div class="card-header bg-off-white">
+                        <strong> Client Activity </strong>
+                        <div class="float-right">
+                            <button class="btnnav">
+                                <i class="material-icons">remove</i>
+                            </button>
+                            <button class="btnnav">
+                                <i class="material-icons">close</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body bg-off-white">
+                        <table
+                            class="table table-hover table-reflow table-responsive-sm table-responsive-md table-responsive-lg">
+                            <thead>
+                                <tr>
+                                    <td scope="col">User</td>
+                                    <td scope="col">Visits</td>
+                                    <td scope="col">Purchases</td>
+                                    <td scope="col">Calls</td>
+                                    <td scope="col">Total Profit </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><img class="rounded-circle mr-2" src="assets/images/1.png"
+                                            width="50px" height="50px"> Angelina Vitale</th>
+                                    <td>287</td>
+                                    <td>34</td>
+                                    <td>52</td>
+                                    <td class="total-profit">5 946 $</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><img class="rounded-circle mr-2" src="assets/images/2.png"
+                                            width="50px" height="50px"> Edmonia Lewis</th>
+                                    <td>159</td>
+                                    <td>12</td>
+                                    <td>252</td>
+                                    <td class="total-profit">1 039 $</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><img class="rounded-circle mr-2" src="assets/images/3.png"
+                                            width="50px" height="50px"> Lawanda Anderson</th>
+                                    <td>94</td>
+                                    <td>3</td>
+                                    <td>28</td>
+                                    <td class="total-profit">205 $</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Visits Card -->
+            <div class="col-lg-7 col-md-12 mt-2">
+                <div class="card">
+                    <div class="card-header bg-off-white">
+                        <strong> Visits </strong>
+                        <div class="float-right">
+                            <button class="btnnav">
+                                <i class="material-icons">remove</i>
+                            </button>
+                            <button class="btnnav">
+                                <i class="material-icons">close</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body bg-off-white">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button type="button" class="btn btn-outline-dark">Web Page
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-dark offset-1">Today
+                                        <i class="fa fa-angle-down"></i>
+                                    </button>
+                                </div>
+                                <div class="col-12">
+                                    <h4 class="conversion mt-3">Conversion: <span class="conversion-percent">31%</span>
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm-12 col-md-4">
+                                    <span id="uvchartsviews"
+                                        class="chart-text vu-chart mt-5 pt-4 ml-5 pl-4 position-absolute">Views</span>
+                                    <div id="pie-mold1" class="yummy-pie mb-sm-5 progress-value" data-percentage="80"
+                                        data-baking-time="4782" title="Views">
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <span id="uvchartsusers"
+                                        class="chart-text vu-chart mt-5 pt-4 ml-5 pl-4 position-absolute">Users</span>
+                                    <div id="pie-mold2" class="yummy-pie pos mb-sm-5 progress-value"
+                                        data-percentage="65" data-baking-time="1263" title="Users">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <span id="uvchartspurchas"
+                                        class="chart-text mt-5 pt-4 ml-5 pl-3 position-absolute">Purchases</span>
+                                    <div id="pie-mold3" class="yummy-pie mb-sm-5 progress-value" data-percentage="50"
+                                        data-baking-time="394" title="Purchases">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Messages Card -->
+            <div class="col-lg-5 col-md-12 mt-2">
+                <div class="card">
+                    <div class="card-header bg-off-white">
+                        <strong> Messages </strong>
+                        <div class="float-right">
+                            <button class="btnnav">
+                                <i class="material-icons">remove</i>
+                            </button>
+                            <button class="btnnav">
+                                <i class="material-icons">close</i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body bg-off-white table-responsive">
+                        <div class="row" id="sender-div">
+                            <div class="col-2"><img class="rounded-circle" src="assets/images/4.png" width="50px"
+                                    height="50px"></div>
+                            <div class="col-10 bg-sender rounded py-2">Yea, i did not see you before. I'm ok.
+                                So, how do you feel when</div>
+                            <span class="col-12 text-right clr-time">16:48, 22 October, 2015</span>
+                        </div>
+                        <div class="row mt-4" id="recipient-div">
+                            <div class="col-10 bg-recipient rounded py-2">Hi! Obsess over customers: when given the
+                                choice between obsessing over competitors
+                                or customers, always obsess over customers.
+                                Start with customers and work backward.”
+                                Jeff Bezos. Pretty cool =)</div>
+                            <div class="col-2"><img class="rounded-circle" src="assets/images/5.png" width="50px"
+                                    height="50px"></div>
+                            <span class="clr-time">12 minutes ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- jquery library -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/circle.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,774 @@
+/* 
+Author: Sara Alkurdy
+*/
+
+
+body {
+    background-color: #e4ebf7;
+}
+
+/* ==================================
+        Header
+===================================== */
+
+.bg-off-white {
+    background: #f2f6fc !important;
+}
+
+.btnnav {
+    background-color: RGBA(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.btnnav:focus {
+    outline: none;
+}
+
+.icon-color {
+    color: #646b84;
+}
+
+/* enable absolute positioning */
+
+.inner-addon {
+    position: relative;
+}
+
+/* style icon */
+
+.inner-addon .fa-search {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+
+.form-inline img {
+    cursor: pointer;
+    width: 80%
+}
+
+/* align icon */
+
+.left-addon .fa-search {
+    left: 0px;
+}
+
+.left-addon input {
+    padding-left: 2rem;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+
+/* ==================================
+       Sidebar
+===================================== */
+
+.sidebar-left {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 100%;
+    min-height: 100%;
+    background: #2f323e;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.content {
+    padding: 5em 2em 2.5em;
+    -webkit-transition: .5s all;
+    transition: .5s all;
+}
+
+.sidebar-menu {
+    position: absolute;
+    top: 70px;
+    list-style: none;
+    color: #e4ebf7;
+}
+
+.sidebar-menu-titles {
+    color: #515974;
+}
+
+.sidebar-menu-items {
+    color: #e4ebf7;
+}
+
+.treeview-menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar-angle,
+.btnlist {
+    position: absolute;
+    left: 6.3rem;
+}
+
+.sidebar-angle {
+    z-index: 1 !important;
+    color: #515974;
+}
+
+.btnlist {
+    z-index: 0 !important;
+}
+
+#toggoleList1 a,
+#toggoleList2 a:hover {
+    color: #e4ebf7;
+    text-decoration: none;
+}
+
+#toggoleList1 li:hover {
+    background-color: #0c1224;
+    color: #e4ebf7;
+}
+
+#toggoleList2 li:hover {
+    background-color: #0c1224;
+    color: #e4ebf7;
+}
+
+.msg-num {
+    background-color: #f45b63;
+    width: 5rem;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* ==================================
+       Implementation Card
+===================================== */
+
+.card-header {
+    color: #515974;
+}
+
+.nested {
+    margin-left: auto;
+    margin-right: auto;
+    color: #bfc1d1;
+}
+
+.balance {
+    border-radius: 40px;
+    color: #f2f6fc;
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    font-family: sans-serif;
+    width: 20%;
+}
+
+.bgreen {
+    background-color: #57c059;
+}
+
+.bred {
+    background-color: #f45b63;
+}
+
+/* ==================================
+       Client Activity Card
+===================================== */
+
+thead {
+    color: #a5a6bb;
+}
+
+tbody {
+    color: #515974;
+}
+
+.total-profit {
+    color: #51b748;
+    font-weight: 700;
+}
+
+/* ==================================
+       Visits Card
+===================================== */
+
+
+.conversion {
+    color: #515974;
+}
+
+.conversion-percent {
+    color: #f45b63 !important;
+}
+
+/* Charts */
+
+.vu-chart {
+    position: relative;
+    left: 1.5rem;
+}
+
+.pie {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.pie-stuffing {
+    stroke-linecap: round;
+    stroke-miterlimit: 1.5;
+    fill: none;
+    stroke-width: 18px;
+}
+
+.pie-trail {
+    fill: none;
+    stroke: #e1e7f0;
+    stroke-width: 15px;
+}
+
+.counter {
+    position: absolute;
+    left: 2.5rem;
+    top: 100px;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 65%;
+    fill: #666;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.8em;
+    text-anchor: middle;
+    color: #515974;
+}
+
+#pie-mold1 {
+    stroke: #57bc5e;
+}
+
+#pie-mold2 {
+    stroke: #fe107e;
+}
+
+#pie-mold3 {
+    stroke: #18a2df;
+}
+
+.chart-text {
+    color: #a5a6bb;
+}
+
+
+
+@media only screen and (max-width: 1199.98px) {
+
+    .counter {
+        top: 80px;
+    }
+
+    .chart-text {
+        color: #a5a6bb;
+        left: 0;
+        top: -13px;
+    }
+
+}
+
+@media (max-width: 1236px) {
+    .counter {
+        -webkit-transform: translate(-10px, -5px);
+        transform: translate(-10px, -5px);
+        left: 20% !important;
+        top: 40% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(-15px, -5px);
+        transform: translate(8px, -5px);
+        left: 0% !important;
+        top: -14px !important;
+    }
+
+    .tempText {
+        font-size: 13px !important;
+        top: -25px !important;
+        left: -18px !important;
+    }
+
+    .tempCounter {
+        font-size: 13px !important;
+        top: 72px !important;
+        left: 35px !important;
+    }
+
+}
+
+@media (max-width: 1185px) {
+    .counter {
+        -webkit-transform: translate(-10px, -5px);
+        transform: translate(-10px, -5px);
+        left: 20% !important;
+        top: 40% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(1px, -5px);
+        transform: translate(1px, -5px);
+        left: 1% !important;
+        top: -18px !important;
+    }
+
+    .tempText {
+        font-size: 15px !important;
+        top: -32px !important;
+        left: -24px !important;
+    }
+
+    .tempCounter {
+        font-size: 15px !important;
+        top: 62px !important;
+        left: 35px !important;
+    }
+}
+
+@media (max-width: 1111px) {
+    .counter {
+        -webkit-transform: translate(-15px, -13px);
+        transform: translate(-15px, -13px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(-10px, -10px);
+        transform: translate(-10px, -10px);
+    }
+
+    .tempText {
+        font-size: 13px !important;
+        top: -20px !important;
+        left: -15px !important;
+    }
+
+    .tempCounter {
+        font-size: 13px !important;
+        top: 70px !important;
+        left: 35px !important;
+    }
+
+}
+
+@media (max-width: 1034.98px) {
+    .counter {
+        -webkit-transform: translate(-15px, -13px);
+        transform: translate(-15px, -13px);
+        left: 25% !important;
+        top: 45% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(-10px, -10px);
+        transform: translate(-10px, -10px);
+        left: 0% !important;
+        top: -17px !important;
+    }
+
+    .tempText {
+        top: -32px !important;
+        left: -24px !important;
+    }
+
+    .tempCounter {
+        top: 62px !important;
+        left: 35px !important;
+    }
+
+}
+
+@media (max-width: 1006.98px) {
+    .counter {
+        -webkit-transform: translate(-10px, -15px);
+        transform: translate(-10px, -15px);
+        left: 24% !important;
+        top: 47% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(-10px, -10px);
+        transform: translate(-10px, -10px);
+        left: 0% !important;
+        top: -14px !important;
+    }
+
+    .tempText {
+        top: -32px !important;
+        left: -24px !important;
+    }
+
+    .tempCounter {
+        top: 62px !important;
+        left: 35px !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .counter {
+        -webkit-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
+        left: 15% !important;
+        top: 37% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(22px, 17px);
+        transform: translate(22px, 17px);
+        left: 0% !important;
+        top: -14px !important;
+    }
+
+    .tempText {
+        top: -21px !important;
+        left: -12px !important;
+    }
+
+    .tempCounter {
+        font-size: 5px;
+        top: 10px;
+        left: 15px;
+    }
+
+}
+
+@media (max-width: 969px) {
+    .counter {
+        -webkit-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(22px, 17px);
+        transform: translate(22px, 17px);
+    }
+
+    .tempText {
+        font-size: 15px !important;
+        top: -44px !important;
+        left: -33px !important;
+    }
+
+    .tempCounter {
+        font-size: 15px !important;
+        top: 49px !important;
+        left: 27px !important;
+    }
+}
+
+@media (max-width: 843px) {
+    .counter {
+        -webkit-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(22px, 17px);
+        transform: translate(22px, 17px);
+    }
+
+    .tempText {
+        font-size: 15px !important;
+        top: -50px !important;
+        left: -42px !important;
+    }
+
+    .tempCounter {
+        font-size: 15px !important;
+        top: 40px !important;
+        left: 25px !important;
+    }
+}
+
+@media (max-width: 787px) {
+    .counter {
+        -webkit-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(22px, 17px);
+        transform: translate(22px, 17px);
+    }
+
+    .tempText {
+        font-size: 13px !important;
+        top: -50px !important;
+        left: -45px !important;
+    }
+
+    .tempCounter {
+        font-size: 13px !important;
+        top: 40px !important;
+        left: 20px !important;
+    }
+}
+
+@media (max-width: 780px) {
+    .counter {
+        -webkit-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(22px, 17px);
+        transform: translate(22px, 17px);
+    }
+
+    .tempText {
+        font-size: 13px !important;
+        top: -50px !important;
+        left: -45px !important;
+    }
+
+    .tempCounter {
+        font-size: 13px !important;
+        top: 40px !important;
+        left: 20px !important;
+    }
+}
+
+@media (max-width: 778px) {
+    .counter {
+        -webkit-transform: translate(0px, 20px);
+        transform: translate(0px, 20px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(22px, 17px);
+        transform: translate(22px, 17px);
+    }
+
+    .tempText {
+        font-size: 13px !important;
+        top: -50px !important;
+        left: -45px !important;
+    }
+
+    .tempCounter {
+        font-size: 13px !important;
+        top: 40px !important;
+        left: 20px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .counter {
+        -webkit-transform: translate(39px, 160px);
+        transform: translate(39px, 160px);
+        left: 9% !important;
+        top: 23% !important;
+        font-size: 25px !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(161px, 133px);
+        transform: translate(160px, 133px);
+        left: 0% !important;
+        top: 0% !important;
+        font-size: 25px !important;
+    }
+
+    .tempText {
+        font-size: 25px !important;
+        transform: translate(160px, 133px);
+    }
+
+    .tempCounter {
+        font-size: 25px !important;
+        transform: translate(39px, 160px);
+    }
+
+    #bodyContent {
+        margin-left: 0px !important;
+    }
+
+    /* .sidebar-left {
+        position: fixed;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        background: #2f323e;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 999;
+    } */
+}
+
+@media (max-width: 617px) {
+    .counter {
+        -webkit-transform: translate(39px, 160px);
+        transform: translate(39px, 160px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(147px, 133px);
+        transform: translate(136px, 133px)
+    }
+
+    .tempText {
+        font-size: 25px !important;
+        transform: translate(136px, 133px)
+    }
+
+    .tempCounter {
+        font-size: 25px !important;
+        transform: translate(39px, 160px);
+    }
+
+}
+
+@media (max-width: 580px) {
+    .counter {
+        -webkit-transform: translate(24px, 150px);
+        transform: translate(24px, 150px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(120px, 140px);
+        transform: translate(120px, 140px);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .counter {
+        -webkit-transform: translate(24px, 100px);
+        transform: translate(24px, 120px);
+    }
+
+    .chart-text {
+        -webkit-transform: translate(115px, 90px);
+        transform: translate(96px, 90px);
+    }
+}
+
+@media (max-width: 540px) {
+    .counter {
+        -webkit-transform: translate(24px, 100px);
+        transform: translate(67px, 208px);
+        left: 0% !important;
+        top: 0% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(110px, 90px);
+        transform: translate(110px, 90px);
+        left: -3% !important;
+        top: 0% !important;
+    }
+}
+
+@media (max-width: 503px) {
+    .counter {
+        -webkit-transform: translate(24px, 100px);
+        transform: translate(63px, 182px);
+        left: 0% !important;
+        top: 0% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(95px, 90px);
+        transform: translate(85px, 63px);
+        left: 0% !important;
+        top: 0% !important;
+    }
+
+}
+
+@media (max-width: 496px) {
+    .counter {
+        -webkit-transform: translate(14px, 90px);
+        transform: translate(52px, 187px);
+        left: 0% !important;
+        top: 0% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(80px, 70px);
+        transform: translate(80px, 70px);
+        left: 0% !important;
+        top: 0% !important;
+    }
+}
+
+@media (max-width: 486px) {
+    .counter {
+        -webkit-transform: translate(14px, 90px);
+        transform: translate(14px, 90px);
+        left: 0% !important;
+        top: 0% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(80px, 70px);
+        transform: translate(80px, 70px);
+        left: 0% !important;
+        top: 0% !important;
+    }
+
+}
+
+@media (max-width: 467px) {
+    .counter {
+        -webkit-transform: translate(14px, 90px);
+        transform: translate(14px, 90px);
+        left: 11% !important;
+        top: 27% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(70px, 70px);
+        transform: translate(70px, 70px);
+        left: 1% !important;
+        top: -5% !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .counter {
+        -webkit-transform: translate(14px, 90px);
+        transform: translate(14px, 90px);
+        left: 11% !important;
+        top: 23% !important;
+    }
+
+    .chart-text {
+        -webkit-transform: translate(70px, 70px);
+        transform: translate(70px, 70px);
+        left: -10% !important;
+        top: -11% !important;
+    }
+}
+
+
+
+/* ==================================
+       Messages Card
+===================================== */
+
+.bg-sender {
+    background: #57c059;
+    color: #f2f6fc;
+}
+
+.bg-recipient {
+    background: #e1e7f0;
+    color: #515974;
+}
+
+.clr-time {
+    color: #b6b8c9;
+}
+
+#counter {
+    font-size: 16px;
+}
